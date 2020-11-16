@@ -174,7 +174,7 @@
     YLPrivacyPermissionType type = numType.integerValue;
     if (type == YLPrivacyPermissionType_Location) {
         if (![YLPrivacyPermissionLocation isServicesEnabled]) {
-            [YLPrivacyPermissionSetting showAlertWithTitle:@"提示" msg:@"请在系统 设置->隐私->定位服务 开启" ok:@"知道了"];
+            [YLPrivacyPermissionSetting showAlertToDislayPrivacySettingWithTitle:@"提示" msg:@"请在系统 设置->隐私->定位服务 开启" cancel:@"" setting:@"知道了"];
             return;
         }
     } else if(type == YLPrivacyPermissionType_DataNetwork) {
@@ -188,17 +188,15 @@
         if ( !granted && !firstTime ) {
             NSString *msg = @"没有 xxx 权限，是否前往设置";
             if (numType.integerValue == YLPrivacyPermissionType_Tracking) {
-                
                 if (@available(iOS 14.0, *)) {
                     msg = @"没有广告权限,是否前往设置(App跟踪权限 需要检查系统权限是否开启 设置->隐私->跟踪)";
                 }else{
                     msg = @"没有广告权限,需要检查系统权限是否开启 设置->隐私->广告->限制广告跟踪)";
-                    [YLPrivacyPermissionSetting showAlertWithTitle:@"提示" msg:msg ok:@"知道了"];
+                    [YLPrivacyPermissionSetting showAlertToDislayPrivacySettingWithTitle:@"提示" msg:msg cancel:@"" setting:@"知道了"];
                     return;
                 }
             }
-            
-            [YLPrivacyPermissionSetting showAlertToDislayPrivacySettingWithTitle:@"提示" msg:msg cancel:@"取消" setting:@"设置"];
+            [YLPrivacyPermissionSetting showAlertToDislayPrivacySettingWithTitle:@"提示" msg:msg cancel:@"" setting:@"知道了"];
         } else if(granted && !firstTime) {
             [YLPrivacyPermissionSetting showAlertToDislayPrivacySettingWithTitle:@"提示" msg:@"是否前往设置修改权限" cancel:@"取消" setting:@"设置"];
         }
