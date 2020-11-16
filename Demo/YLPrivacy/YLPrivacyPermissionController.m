@@ -184,8 +184,7 @@
     
     [YLPrivacyPermission authorizeWithType:numType.integerValue completion:^(BOOL granted, BOOL firstTime) {
         [self.listView reloadData];
-        
-        if ( !granted && !firstTime ) {
+        if (!granted) {
             NSString *msg = @"没有 xxx 权限，是否前往设置";
             if (numType.integerValue == YLPrivacyPermissionType_Tracking) {
                 if (@available(iOS 14.0, *)) {
@@ -197,10 +196,7 @@
                 }
             }
             [YLPrivacyPermissionSetting showAlertToDislayPrivacySettingWithTitle:@"提示" msg:msg cancel:@"" setting:@"知道了"];
-        } else if(granted && !firstTime) {
-            [YLPrivacyPermissionSetting showAlertToDislayPrivacySettingWithTitle:@"提示" msg:@"是否前往设置修改权限" cancel:@"取消" setting:@"设置"];
         }
-        
     }];
     
 }
