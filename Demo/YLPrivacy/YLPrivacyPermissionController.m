@@ -202,29 +202,29 @@
 }
 
 #pragma mark- 网络请求
-- (void)netGetRequest
-{
-    //1，创建请求地址
-    NSString *urlString = @"https://tcc.taobao.com/cc/json/mobile_tel_segment.htm?tel=15852509988";
-    //对字符进行处理
-    urlString = [urlString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
-    
-    NSURL *url = [NSURL URLWithString:urlString];
-    
-    //2.创建请求类
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    
-    //3.创建会话（单例）
-    NSURLSession *sharedSession = [NSURLSession sharedSession];
-    
-    //4.根据会话创建任务
-    NSURLSessionDataTask *dataTask = [sharedSession dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        NSLog(@"%@",data);
-    }];
-    
-    //5.启动任务
-    [dataTask resume];
-}
+//- (void)netGetRequest
+//{
+//    //1，创建请求地址
+//    NSString *urlString = @"https://tcc.taobao.com/cc/json/mobile_tel_segment.htm?tel=15852509988";
+//    //对字符进行处理
+//    urlString = [urlString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+//    
+//    NSURL *url = [NSURL URLWithString:urlString];
+//    
+//    //2.创建请求类
+//    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+//    
+//    //3.创建会话（单例）
+//    NSURLSession *sharedSession = [NSURLSession sharedSession];
+//    
+//    //4.根据会话创建任务
+//    NSURLSessionDataTask *dataTask = [sharedSession dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+//        NSLog(@"%@",data);
+//    }];
+//    
+//    //5.启动任务
+//    [dataTask resume];
+//}
 
 - (void)netPermissionlisten
 {
