@@ -54,7 +54,6 @@
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
-//        @"www.baidu.com"
         NetReachability *reachability = [NetReachability reachabilityWithHostName:hostName];
         self.hostReachability = reachability;
         
@@ -74,9 +73,9 @@
         
         [YLPrivacyPermissionData authorizeWithCompletion:^(BOOL granted, BOOL firstTime)
          {
-             self.permissionGranted = granted;
-             [self handPermission];
-         }];
+            self.permissionGranted = granted;
+            [self handPermission];
+        }];
     });
 }
 
@@ -93,12 +92,12 @@
 {
     NetReachability *curReach = [notification object];
     NetReachWorkStatus netStatus = [curReach currentReachabilityStatus];
-   
+    
     if (![NSThread isMainThread]) {
         
         NSLog(@"subThread");
     }
-
+    
     
     [self handNetWithNetStatus:netStatus];
 }
@@ -120,7 +119,7 @@
         }
     } else {
         [self listenNetPermisson];
-//        [self handPermission];
+        //        [self handPermission];
     }
 }
 

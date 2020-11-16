@@ -185,7 +185,7 @@
     [YLPrivacyPermission authorizeWithType:numType.integerValue completion:^(BOOL granted, BOOL firstTime) {
         [self.listView reloadData];
         if (!granted) {
-            NSString *msg = @"没有 xxx 权限，是否前往设置";
+            NSString *msg = [NSString stringWithFormat:@"没有 %@ 权限，是否前往设置",YLPrivacyNameFromType(numType.integerValue)];
             if (numType.integerValue == YLPrivacyPermissionType_Tracking) {
                 if (@available(iOS 14.0, *)) {
                     msg = @"没有广告权限,是否前往设置(App跟踪权限 需要检查系统权限是否开启 设置->隐私->跟踪)";

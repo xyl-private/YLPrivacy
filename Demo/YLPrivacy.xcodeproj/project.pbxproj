@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22B78B7B256261AC003CF2CE /* YLPrivacyConstantMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B78B7A256261AC003CF2CE /* YLPrivacyConstantMacro.m */; };
 		22EB2A8F25620C0900A92644 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EB2A8E25620C0900A92644 /* AppDelegate.m */; };
 		22EB2A9225620C0900A92644 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EB2A9125620C0900A92644 /* SceneDelegate.m */; };
 		22EB2A9525620C0900A92644 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EB2A9425620C0900A92644 /* ViewController.m */; };
@@ -37,6 +38,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22B78B79256261AC003CF2CE /* YLPrivacyConstantMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLPrivacyConstantMacro.h; sourceTree = "<group>"; };
+		22B78B7A256261AC003CF2CE /* YLPrivacyConstantMacro.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLPrivacyConstantMacro.m; sourceTree = "<group>"; };
 		22EB2A8A25620C0800A92644 /* YLPrivacy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLPrivacy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22EB2A8D25620C0900A92644 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		22EB2A8E25620C0900A92644 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -146,6 +149,8 @@
 			children = (
 				22EB2B6E25620FD500A92644 /* NetReachability.h */,
 				22EB2B6F25620FD500A92644 /* NetReachability.m */,
+				22B78B79256261AC003CF2CE /* YLPrivacyConstantMacro.h */,
+				22B78B7A256261AC003CF2CE /* YLPrivacyConstantMacro.m */,
 				22EB2B6425620FD500A92644 /* YLPrivacyPermission.h */,
 				22EB2B5925620FD500A92644 /* YLPrivacyPermission.m */,
 				22EB2B6A25620FD500A92644 /* YLPrivacyPermissionCalendar.h */,
@@ -261,6 +266,7 @@
 				22EB2A9525620C0900A92644 /* ViewController.m in Sources */,
 				22EB2A8F25620C0900A92644 /* AppDelegate.m in Sources */,
 				22EB2B7825620FD500A92644 /* YLPrivacyPermissionPhotos.m in Sources */,
+				22B78B7B256261AC003CF2CE /* YLPrivacyConstantMacro.m in Sources */,
 				22EB2B7725620FD500A92644 /* YLPrivacyPermissionNotification.m in Sources */,
 				22EB2AA025620C0900A92644 /* main.m in Sources */,
 				22EB2B7625620FD500A92644 /* YLPrivacyPermission.m in Sources */,
@@ -423,7 +429,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.2;
+				MARKETING_VERSION = 0.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hs.xingfaner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -443,7 +449,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.2;
+				MARKETING_VERSION = 0.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hs.xingfaner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

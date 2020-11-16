@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
 spec.name         = "YLPrivacy"
-spec.version      = "0.0.2"
+spec.version      = "0.0.3"
 spec.summary      = "iOS 隐私权限授权"
 
 spec.description  = <<-DESC
@@ -24,7 +24,7 @@ spec.subspec 'All' do |all|
 end
 
 spec.subspec 'Base' do |base|
-base.source_files = 'YLPrivacy/YLPrivacyPermissionSetting.{h,m}','YLPrivacy/YLPrivacyPermission.{h,m}'
+base.source_files = 'YLPrivacy/YLPrivacyPermissionSetting.{h,m}','YLPrivacy/YLPrivacyPermission.{h,m}','YLPrivacy/YLPrivacyConstantMacro.{h,m}'
 end
 
 spec.subspec 'Camera' do |camera|

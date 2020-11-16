@@ -47,92 +47,51 @@
                                           cancel:(NSString*)cancel
                                          setting:(NSString*)setting
 {
-    [self showAlertToDislayPrivacySettingWithTitle:title msg:message cancel:cancel setting:setting completion:^{
-    }];
-}
-
-/**
- show dialog to guide user to show App privacy setting
- 
- @param title title
- @param message privacy message
- @param cancel cancel button text
- @param setting setting button text,if user tap this button ,will show App privacy setting
- @param completion user has been choosed
- */
-+ (void)showAlertToDislayPrivacySettingWithTitle:(NSString*)title
-                                             msg:(NSString*)message
-                                          cancel:(NSString*)cancel
-                                         setting:(NSString*)setting
-                                      completion:(void(^)(void))completion
-{
     if (@available(iOS 8,*)) {
         
         UIAlertController* alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
         
-        //cancel
-        UIAlertAction *action = [UIAlertAction actionWithTitle:cancel style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
-            if (completion) {
-                completion();
-            }
-        }];
-        [alertController addAction:action];
-        
+        if (cancel.length > 0) {
+            //cancel
+            UIAlertAction *action = [UIAlertAction actionWithTitle:cancel style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+            }];
+            [alertController addAction:action];
+        }
         //ok
         UIAlertAction *okAction = [UIAlertAction actionWithTitle:setting style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-            
-            if (completion) {
-                completion();
-            }
-            
             [self displayAppPrivacySettings];
         }];
         [alertController addAction:okAction];
-        
-        [[self currentTopViewController] presentViewController:alertController animated:YES completion:nil];
+        [[self yl_getCurrentVC] presentViewController:alertController animated:YES completion:nil];
     }
 }
 
-+ (void)showAlertWithTitle:(NSString*)title
-                       msg:(NSString*)message
-                        ok:(NSString*)ok
-
+//获取当前屏幕显示的viewcontroller
++ (UIViewController *) yl_getCurrentVC
 {
-    if (@available(iOS 8,*)) {
-        
-        UIAlertController* alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
-        
-        
-        
-        //ok
-        UIAlertAction *okAction = [UIAlertAction actionWithTitle:ok style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-            
-            
-        }];
-        [alertController addAction:okAction];
-        
-        [[self currentTopViewController] presentViewController:alertController animated:YES completion:nil];
-    }
+    UIViewController *rootViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
+    UIViewController *currentVC = [self getCurrentVCFrom:rootViewController];
+    return currentVC;
 }
 
-+ (UIViewController*)currentTopViewController
++ (UIViewController *)getCurrentVCFrom:(UIViewController *)rootVC
 {
-    UIViewController *currentViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
-    while ([currentViewController presentedViewController])    currentViewController = [currentViewController presentedViewController];
-    
-    if ([currentViewController isKindOfClass:[UITabBarController class]]
-        && ((UITabBarController*)currentViewController).selectedViewController != nil )
-    {
-        currentViewController = ((UITabBarController*)currentViewController).selectedViewController;
+    UIViewController *currentVC;
+    if ([rootVC presentedViewController]) {
+        // 视图是被presented出来的
+        rootVC = [rootVC presentedViewController];
     }
-    
-    while ([currentViewController isKindOfClass:[UINavigationController class]]
-           && [(UINavigationController*)currentViewController topViewController])
-    {
-        currentViewController = [(UINavigationController*)currentViewController topViewController];
+    if ([rootVC isKindOfClass:[UITabBarController class]]) {
+        // 根视图为UITabBarController
+        currentVC = [self getCurrentVCFrom:[(UITabBarController *)rootVC selectedViewController]];
+    } else if ([rootVC isKindOfClass:[UINavigationController class]]){
+        // 根视图为UINavigationController
+        currentVC = [self getCurrentVCFrom:[(UINavigationController *)rootVC visibleViewController]];
+    } else {
+        // 根视图为非导航类
+        currentVC = rootVC;
     }
-    
-    return currentViewController;
+    return currentVC;
 }
 
 @end
