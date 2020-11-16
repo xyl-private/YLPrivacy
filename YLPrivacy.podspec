@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
 spec.name         = "YLPrivacy"
-spec.version      = "0.0.1"
+spec.version      = "0.0.2"
 spec.summary      = "iOS 隐私权限授权"
 
 spec.description  = <<-DESC
@@ -9,7 +9,7 @@ iOS 隐私许可状态,设置权限的许可
 DESC
 spec.homepage     = "https://github.com/xyl-private/YLPrivacy"
 spec.license      = { :type => "MIT", :file => "LICENSE" }
-spec.author       = { "村雨灬龑" => "xyl-private@163.com" }
+spec.author       = { "村雨灬龑" => "xyl_private@163.com" }
 spec.ios.deployment_target = "9.0"
 
 
@@ -17,6 +17,11 @@ spec.ios.deployment_target = "9.0"
 spec.source       = { :git => "https://github.com/xyl-private/YLPrivacy.git", :tag => "#{spec.version}" }
 
 spec.requires_arc = true
+spec.default_subspec = 'All'
+
+spec.subspec 'All' do |all|
+    all.source_files = 'YLPrivacy/*.{h,m}'
+end
 
 spec.subspec 'Base' do |base|
 base.source_files = 'YLPrivacy/YLPrivacyPermissionSetting.{h,m}','YLPrivacy/YLPrivacyPermission.{h,m}'
