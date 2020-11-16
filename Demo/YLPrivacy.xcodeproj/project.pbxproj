@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22EB2A8F25620C0900A92644 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EB2A8E25620C0900A92644 /* AppDelegate.m */; };
+		22EB2A9225620C0900A92644 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EB2A9125620C0900A92644 /* SceneDelegate.m */; };
+		22EB2A9525620C0900A92644 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EB2A9425620C0900A92644 /* ViewController.m */; };
+		22EB2A9825620C0900A92644 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22EB2A9625620C0900A92644 /* Main.storyboard */; };
+		22EB2A9A25620C0900A92644 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22EB2A9925620C0900A92644 /* Assets.xcassets */; };
+		22EB2A9D25620C0900A92644 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22EB2A9B25620C0900A92644 /* LaunchScreen.storyboard */; };
+		22EB2AA025620C0900A92644 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EB2A9F25620C0900A92644 /* main.m */; };
+		22EB2AAE25620D1000A92644 /* YLPrivacyPermissionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22EB2AA925620D1000A92644 /* YLPrivacyPermissionController.xib */; };
+		22EB2AAF25620D1000A92644 /* YLPrivacyPermissionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EB2AAA25620D1000A92644 /* YLPrivacyPermissionTableViewCell.m */; };
+		22EB2AB025620D1000A92644 /* YLPrivacyPermissionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22EB2AAC25620D1000A92644 /* YLPrivacyPermissionTableViewCell.xib */; };
+		22EB2AB125620D1000A92644 /* YLPrivacyPermissionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EB2AAD25620D1000A92644 /* YLPrivacyPermissionController.m */; };
+		22EB2B7225620FD500A92644 /* YLPrivacyPermissionContacts.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EB2B5425620FD400A92644 /* YLPrivacyPermissionContacts.m */; };
+		22EB2B7325620FD500A92644 /* YLPrivacyPermissionSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EB2B5525620FD400A92644 /* YLPrivacyPermissionSetting.m */; };
+		22EB2B7425620FD500A92644 /* YLPrivacyPermissionTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EB2B5625620FD400A92644 /* YLPrivacyPermissionTracking.m */; };
+		22EB2B7525620FD500A92644 /* YLPrivacyPermissionCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EB2B5725620FD500A92644 /* YLPrivacyPermissionCamera.m */; };
+		22EB2B7625620FD500A92644 /* YLPrivacyPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EB2B5925620FD500A92644 /* YLPrivacyPermission.m */; };
+		22EB2B7725620FD500A92644 /* YLPrivacyPermissionNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EB2B5A25620FD500A92644 /* YLPrivacyPermissionNotification.m */; };
+		22EB2B7825620FD500A92644 /* YLPrivacyPermissionPhotos.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EB2B5C25620FD500A92644 /* YLPrivacyPermissionPhotos.m */; };
+		22EB2B7925620FD500A92644 /* YLPrivacyPermissionNet.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EB2B5E25620FD500A92644 /* YLPrivacyPermissionNet.m */; };
+		22EB2B7A25620FD500A92644 /* YLPrivacyPermissionHealth.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EB2B5F25620FD500A92644 /* YLPrivacyPermissionHealth.m */; };
+		22EB2B7B25620FD500A92644 /* YLPrivacyPermissionReminders.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EB2B6625620FD500A92644 /* YLPrivacyPermissionReminders.m */; };
+		22EB2B7C25620FD500A92644 /* YLPrivacyPermissionCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EB2B6725620FD500A92644 /* YLPrivacyPermissionCalendar.m */; };
+		22EB2B7D25620FD500A92644 /* YLPrivacyPermissionMediaLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EB2B6825620FD500A92644 /* YLPrivacyPermissionMediaLibrary.m */; };
+		22EB2B7E25620FD500A92644 /* YLPrivacyPermissionLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EB2B6925620FD500A92644 /* YLPrivacyPermissionLocation.m */; };
+		22EB2B7F25620FD500A92644 /* YLPrivacyPermissionData.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EB2B6D25620FD500A92644 /* YLPrivacyPermissionData.m */; };
+		22EB2B8025620FD500A92644 /* NetReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EB2B6F25620FD500A92644 /* NetReachability.m */; };
+		22EB2B8125620FD500A92644 /* YLPrivacyPermissionMicrophone.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EB2B7125620FD500A92644 /* YLPrivacyPermissionMicrophone.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		22EB2A8A25620C0800A92644 /* YLPrivacy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLPrivacy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22EB2A8D25620C0900A92644 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		22EB2A8E25620C0900A92644 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		22EB2A9025620C0900A92644 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		22EB2A9125620C0900A92644 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		22EB2A9325620C0900A92644 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		22EB2A9425620C0900A92644 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		22EB2A9725620C0900A92644 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		22EB2A9925620C0900A92644 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22EB2A9C25620C0900A92644 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		22EB2A9E25620C0900A92644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22EB2A9F25620C0900A92644 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		22EB2AA825620D1000A92644 /* YLPrivacyPermissionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPrivacyPermissionController.h; sourceTree = "<group>"; };
+		22EB2AA925620D1000A92644 /* YLPrivacyPermissionController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLPrivacyPermissionController.xib; sourceTree = "<group>"; };
+		22EB2AAA25620D1000A92644 /* YLPrivacyPermissionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPrivacyPermissionTableViewCell.m; sourceTree = "<group>"; };
+		22EB2AAB25620D1000A92644 /* YLPrivacyPermissionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPrivacyPermissionTableViewCell.h; sourceTree = "<group>"; };
+		22EB2AAC25620D1000A92644 /* YLPrivacyPermissionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLPrivacyPermissionTableViewCell.xib; sourceTree = "<group>"; };
+		22EB2AAD25620D1000A92644 /* YLPrivacyPermissionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPrivacyPermissionController.m; sourceTree = "<group>"; };
+		22EB2B5225620FD400A92644 /* YLPrivacyPermissionReminders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPrivacyPermissionReminders.h; sourceTree = "<group>"; };
+		22EB2B5325620FD400A92644 /* YLPrivacyPermissionCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPrivacyPermissionCamera.h; sourceTree = "<group>"; };
+		22EB2B5425620FD400A92644 /* YLPrivacyPermissionContacts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPrivacyPermissionContacts.m; sourceTree = "<group>"; };
+		22EB2B5525620FD400A92644 /* YLPrivacyPermissionSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPrivacyPermissionSetting.m; sourceTree = "<group>"; };
+		22EB2B5625620FD400A92644 /* YLPrivacyPermissionTracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPrivacyPermissionTracking.m; sourceTree = "<group>"; };
+		22EB2B5725620FD500A92644 /* YLPrivacyPermissionCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPrivacyPermissionCamera.m; sourceTree = "<group>"; };
+		22EB2B5825620FD500A92644 /* YLPrivacyPermissionPhotos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPrivacyPermissionPhotos.h; sourceTree = "<group>"; };
+		22EB2B5925620FD500A92644 /* YLPrivacyPermission.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPrivacyPermission.m; sourceTree = "<group>"; };
+		22EB2B5A25620FD500A92644 /* YLPrivacyPermissionNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPrivacyPermissionNotification.m; sourceTree = "<group>"; };
+		22EB2B5B25620FD500A92644 /* YLPrivacyPermissionContacts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPrivacyPermissionContacts.h; sourceTree = "<group>"; };
+		22EB2B5C25620FD500A92644 /* YLPrivacyPermissionPhotos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPrivacyPermissionPhotos.m; sourceTree = "<group>"; };
+		22EB2B5D25620FD500A92644 /* YLPrivacyPermissionSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPrivacyPermissionSetting.h; sourceTree = "<group>"; };
+		22EB2B5E25620FD500A92644 /* YLPrivacyPermissionNet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPrivacyPermissionNet.m; sourceTree = "<group>"; };
+		22EB2B5F25620FD500A92644 /* YLPrivacyPermissionHealth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPrivacyPermissionHealth.m; sourceTree = "<group>"; };
+		22EB2B6025620FD500A92644 /* YLPrivacyPermissionNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPrivacyPermissionNotification.h; sourceTree = "<group>"; };
+		22EB2B6125620FD500A92644 /* YLPrivacyPermissionMediaLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPrivacyPermissionMediaLibrary.h; sourceTree = "<group>"; };
+		22EB2B6225620FD500A92644 /* YLPrivacyPermissionMicrophone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPrivacyPermissionMicrophone.h; sourceTree = "<group>"; };
+		22EB2B6325620FD500A92644 /* YLPrivacyPermissionData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPrivacyPermissionData.h; sourceTree = "<group>"; };
+		22EB2B6425620FD500A92644 /* YLPrivacyPermission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPrivacyPermission.h; sourceTree = "<group>"; };
+		22EB2B6525620FD500A92644 /* YLPrivacyPermissionTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPrivacyPermissionTracking.h; sourceTree = "<group>"; };
+		22EB2B6625620FD500A92644 /* YLPrivacyPermissionReminders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPrivacyPermissionReminders.m; sourceTree = "<group>"; };
+		22EB2B6725620FD500A92644 /* YLPrivacyPermissionCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPrivacyPermissionCalendar.m; sourceTree = "<group>"; };
+		22EB2B6825620FD500A92644 /* YLPrivacyPermissionMediaLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPrivacyPermissionMediaLibrary.m; sourceTree = "<group>"; };
+		22EB2B6925620FD500A92644 /* YLPrivacyPermissionLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPrivacyPermissionLocation.m; sourceTree = "<group>"; };
+		22EB2B6A25620FD500A92644 /* YLPrivacyPermissionCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPrivacyPermissionCalendar.h; sourceTree = "<group>"; };
+		22EB2B6B25620FD500A92644 /* YLPrivacyPermissionHealth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPrivacyPermissionHealth.h; sourceTree = "<group>"; };
+		22EB2B6C25620FD500A92644 /* YLPrivacyPermissionLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPrivacyPermissionLocation.h; sourceTree = "<group>"; };
+		22EB2B6D25620FD500A92644 /* YLPrivacyPermissionData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPrivacyPermissionData.m; sourceTree = "<group>"; };
+		22EB2B6E25620FD500A92644 /* NetReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetReachability.h; sourceTree = "<group>"; };
+		22EB2B6F25620FD500A92644 /* NetReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetReachability.m; sourceTree = "<group>"; };
+		22EB2B7025620FD500A92644 /* YLPrivacyPermissionNet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPrivacyPermissionNet.h; sourceTree = "<group>"; };
+		22EB2B7125620FD500A92644 /* YLPrivacyPermissionMicrophone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPrivacyPermissionMicrophone.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22EB2A8725620C0800A92644 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22EB2A8125620C0800A92644 = {
+			isa = PBXGroup;
+			children = (
+				22EB2A8C25620C0900A92644 /* YLPrivacy */,
+				22EB2A8B25620C0800A92644 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22EB2A8B25620C0800A92644 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22EB2A8A25620C0800A92644 /* YLPrivacy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22EB2A8C25620C0900A92644 /* YLPrivacy */ = {
+			isa = PBXGroup;
+			children = (
+				22EB2B1F25620FC600A92644 /* YLPrivacyPermission */,
+				22EB2A8D25620C0900A92644 /* AppDelegate.h */,
+				22EB2A8E25620C0900A92644 /* AppDelegate.m */,
+				22EB2A9025620C0900A92644 /* SceneDelegate.h */,
+				22EB2A9125620C0900A92644 /* SceneDelegate.m */,
+				22EB2A9325620C0900A92644 /* ViewController.h */,
+				22EB2A9425620C0900A92644 /* ViewController.m */,
+				22EB2AA825620D1000A92644 /* YLPrivacyPermissionController.h */,
+				22EB2AAD25620D1000A92644 /* YLPrivacyPermissionController.m */,
+				22EB2AA925620D1000A92644 /* YLPrivacyPermissionController.xib */,
+				22EB2AAB25620D1000A92644 /* YLPrivacyPermissionTableViewCell.h */,
+				22EB2AAA25620D1000A92644 /* YLPrivacyPermissionTableViewCell.m */,
+				22EB2AAC25620D1000A92644 /* YLPrivacyPermissionTableViewCell.xib */,
+				22EB2A9625620C0900A92644 /* Main.storyboard */,
+				22EB2A9925620C0900A92644 /* Assets.xcassets */,
+				22EB2A9B25620C0900A92644 /* LaunchScreen.storyboard */,
+				22EB2A9E25620C0900A92644 /* Info.plist */,
+				22EB2A9F25620C0900A92644 /* main.m */,
+			);
+			path = YLPrivacy;
+			sourceTree = "<group>";
+		};
+		22EB2B1F25620FC600A92644 /* YLPrivacyPermission */ = {
+			isa = PBXGroup;
+			children = (
+				22EB2B6E25620FD500A92644 /* NetReachability.h */,
+				22EB2B6F25620FD500A92644 /* NetReachability.m */,
+				22EB2B6425620FD500A92644 /* YLPrivacyPermission.h */,
+				22EB2B5925620FD500A92644 /* YLPrivacyPermission.m */,
+				22EB2B6A25620FD500A92644 /* YLPrivacyPermissionCalendar.h */,
+				22EB2B6725620FD500A92644 /* YLPrivacyPermissionCalendar.m */,
+				22EB2B5325620FD400A92644 /* YLPrivacyPermissionCamera.h */,
+				22EB2B5725620FD500A92644 /* YLPrivacyPermissionCamera.m */,
+				22EB2B5B25620FD500A92644 /* YLPrivacyPermissionContacts.h */,
+				22EB2B5425620FD400A92644 /* YLPrivacyPermissionContacts.m */,
+				22EB2B6325620FD500A92644 /* YLPrivacyPermissionData.h */,
+				22EB2B6D25620FD500A92644 /* YLPrivacyPermissionData.m */,
+				22EB2B6B25620FD500A92644 /* YLPrivacyPermissionHealth.h */,
+				22EB2B5F25620FD500A92644 /* YLPrivacyPermissionHealth.m */,
+				22EB2B6C25620FD500A92644 /* YLPrivacyPermissionLocation.h */,
+				22EB2B6925620FD500A92644 /* YLPrivacyPermissionLocation.m */,
+				22EB2B6125620FD500A92644 /* YLPrivacyPermissionMediaLibrary.h */,
+				22EB2B6825620FD500A92644 /* YLPrivacyPermissionMediaLibrary.m */,
+				22EB2B6225620FD500A92644 /* YLPrivacyPermissionMicrophone.h */,
+				22EB2B7125620FD500A92644 /* YLPrivacyPermissionMicrophone.m */,
+				22EB2B7025620FD500A92644 /* YLPrivacyPermissionNet.h */,
+				22EB2B5E25620FD500A92644 /* YLPrivacyPermissionNet.m */,
+				22EB2B6025620FD500A92644 /* YLPrivacyPermissionNotification.h */,
+				22EB2B5A25620FD500A92644 /* YLPrivacyPermissionNotification.m */,
+				22EB2B5825620FD500A92644 /* YLPrivacyPermissionPhotos.h */,
+				22EB2B5C25620FD500A92644 /* YLPrivacyPermissionPhotos.m */,
+				22EB2B5225620FD400A92644 /* YLPrivacyPermissionReminders.h */,
+				22EB2B6625620FD500A92644 /* YLPrivacyPermissionReminders.m */,
+				22EB2B5D25620FD500A92644 /* YLPrivacyPermissionSetting.h */,
+				22EB2B5525620FD400A92644 /* YLPrivacyPermissionSetting.m */,
+				22EB2B6525620FD500A92644 /* YLPrivacyPermissionTracking.h */,
+				22EB2B5625620FD400A92644 /* YLPrivacyPermissionTracking.m */,
+			);
+			path = YLPrivacyPermission;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22EB2A8925620C0800A92644 /* YLPrivacy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22EB2AA325620C0900A92644 /* Build configuration list for PBXNativeTarget "YLPrivacy" */;
+			buildPhases = (
+				22EB2A8625620C0800A92644 /* Sources */,
+				22EB2A8725620C0800A92644 /* Frameworks */,
+				22EB2A8825620C0800A92644 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YLPrivacy;
+			productName = YLPrivacy;
+			productReference = 22EB2A8A25620C0800A92644 /* YLPrivacy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22EB2A8225620C0800A92644 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					22EB2A8925620C0800A92644 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 22EB2A8525620C0800A92644 /* Build configuration list for PBXProject "YLPrivacy" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22EB2A8125620C0800A92644;
+			productRefGroup = 22EB2A8B25620C0800A92644 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22EB2A8925620C0800A92644 /* YLPrivacy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22EB2A8825620C0800A92644 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22EB2A9D25620C0900A92644 /* LaunchScreen.storyboard in Resources */,
+				22EB2A9A25620C0900A92644 /* Assets.xcassets in Resources */,
+				22EB2AAE25620D1000A92644 /* YLPrivacyPermissionController.xib in Resources */,
+				22EB2A9825620C0900A92644 /* Main.storyboard in Resources */,
+				22EB2AB025620D1000A92644 /* YLPrivacyPermissionTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22EB2A8625620C0800A92644 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22EB2B7C25620FD500A92644 /* YLPrivacyPermissionCalendar.m in Sources */,
+				22EB2B7425620FD500A92644 /* YLPrivacyPermissionTracking.m in Sources */,
+				22EB2B8125620FD500A92644 /* YLPrivacyPermissionMicrophone.m in Sources */,
+				22EB2AAF25620D1000A92644 /* YLPrivacyPermissionTableViewCell.m in Sources */,
+				22EB2B7925620FD500A92644 /* YLPrivacyPermissionNet.m in Sources */,
+				22EB2B7325620FD500A92644 /* YLPrivacyPermissionSetting.m in Sources */,
+				22EB2B7E25620FD500A92644 /* YLPrivacyPermissionLocation.m in Sources */,
+				22EB2A9525620C0900A92644 /* ViewController.m in Sources */,
+				22EB2A8F25620C0900A92644 /* AppDelegate.m in Sources */,
+				22EB2B7825620FD500A92644 /* YLPrivacyPermissionPhotos.m in Sources */,
+				22EB2B7725620FD500A92644 /* YLPrivacyPermissionNotification.m in Sources */,
+				22EB2AA025620C0900A92644 /* main.m in Sources */,
+				22EB2B7625620FD500A92644 /* YLPrivacyPermission.m in Sources */,
+				22EB2B7225620FD500A92644 /* YLPrivacyPermissionContacts.m in Sources */,
+				22EB2B7A25620FD500A92644 /* YLPrivacyPermissionHealth.m in Sources */,
+				22EB2B7D25620FD500A92644 /* YLPrivacyPermissionMediaLibrary.m in Sources */,
+				22EB2B7525620FD500A92644 /* YLPrivacyPermissionCamera.m in Sources */,
+				22EB2AB125620D1000A92644 /* YLPrivacyPermissionController.m in Sources */,
+				22EB2B8025620FD500A92644 /* NetReachability.m in Sources */,
+				22EB2B7B25620FD500A92644 /* YLPrivacyPermissionReminders.m in Sources */,
+				22EB2B7F25620FD500A92644 /* YLPrivacyPermissionData.m in Sources */,
+				22EB2A9225620C0900A92644 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		22EB2A9625620C0900A92644 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22EB2A9725620C0900A92644 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		22EB2A9B25620C0900A92644 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22EB2A9C25620C0900A92644 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22EB2AA125620C0900A92644 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		22EB2AA225620C0900A92644 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22EB2AA425620C0900A92644 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VYRS248VPT;
+				INFOPLIST_FILE = YLPrivacy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hs.xingfaner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22EB2AA525620C0900A92644 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VYRS248VPT;
+				INFOPLIST_FILE = YLPrivacy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hs.xingfaner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22EB2A8525620C0800A92644 /* Build configuration list for PBXProject "YLPrivacy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22EB2AA125620C0900A92644 /* Debug */,
+				22EB2AA225620C0900A92644 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22EB2AA325620C0900A92644 /* Build configuration list for PBXNativeTarget "YLPrivacy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22EB2AA425620C0900A92644 /* Debug */,
+				22EB2AA525620C0900A92644 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22EB2A8225620C0800A92644 /* Project object */;
+}
